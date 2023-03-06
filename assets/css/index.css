@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* all variations - NO ITALIC */
+
+:root {
+   --color-button: #12bf12;
+   --color-strong: #04E721;
+   
+   --font-padrao: 'Poppins', sans-serif;
+   /* --font-secundaria: Arial, Helvetica, sans-serif; */
+
+   font-size: 16px;
+}
+
+.entrar-no-grupo {
+   border-radius: 10px;
+}

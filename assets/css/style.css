@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* all variations - NO ITALIC */
+
+:root {
+   --color-button: #12bf12;
+   --color-strong: #04E721;
+
+   --font-padrao: 'Poppins', sans-serif;
+   /* --font-secundaria: Arial, Helvetica, sans-serif; */
+
+   font-size: 16px;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background-color: black;
+}
+
+main {
+   width: 100%;
+   min-height: 100vh;
+   padding: 50px;
+   background-image: url(../images/wallpaper-xbox-descktop2.jpg.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 30px;
+   font-family: var(--font-padrao);
+}
+
+main > p#grupo-whats {
+   padding: 5px 10px;
+   background-color: var(--color-strong);
+   color: black;
+   font-weight: 600;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+}
+main > h1 {
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+main > h1 > strong {
+   color: var(--color-strong);
+}
+main > ul {
+   padding: 20px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+}
+main > ul > li > i,p {
+   font-size: 1.5rem;
+}
+main > ul > li > i {
+   font-size: 1.2rem;
+   padding-right: 3px;
+   color: var(--color-strong);
+}
+main > button {
+   border-radius: 10px;
+   background-color: var(--color-button);
+   color: #ffffff;
+   font-family: var(--font-padrao);
+   font-weight: 500;
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   padding: 10px 20px;
+   cursor: pointer;
+   transform: scale(100%);
+   animation: float 2s ease-in-out infinite;
+   transition: all .3s;
+}
+/* main > button:hover {
+   transform: scale(105%);
+   transition: all .4s;
+} */
+
+@keyframes float {
+   0% {
+      transform: scale(100%);
+   }
+   50% {
+      transform: scale(110%);
+   }
+   100% {
+      transform: scale(100%);
+   }
+}
+
+/* footer {
+   position: relative;
+   width: 100%;
+   height: 20vh;
+   padding: 20px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+footer > div.copyright > p {
+   margin-top: 10px;
+}
+footer > div > p {
+   font-size: .9rem;
+}
+
+footer > button {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 10px;
+   background-color: var(--color-button);
+   color: black;
+   font-family: var(--font-padrao);
+   font-weight: 500;
+   font-size: 1rem;
+   padding: 5px 10px;
+   cursor: pointer;
+   transition: all .4s;
+}
+footer > button:hover {
+   transform: scale(105%);
+   transition: all .4s;
+} */
+
+
+/* ! Media queries */
+@media (min-width: 1920px) {
+   :root {
+      font-size: 20px;
+   }
+}
+@media (min-width: 2500px) {
+   :root {
+      font-size: 25px;
+   }
+}
+@media (max-width: 455px) {
+   main {
+      padding: 20px;
+   }
+}
+
+/* ? HEIGHT */
+@media (max-height: 920px) {
+   main {
+      min-height: none;
+      padding: 70px 20px 70px 20px;
+   }
+}
